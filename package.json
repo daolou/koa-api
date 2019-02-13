@@ -1,0 +1,26 @@
+{
+  "name": "koa_api",
+  "version": "1.0.0",
+  "description": "api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon app/app.js",
+    "pm2": "NODE_ENV=production pm2 start app/app.js --name koaApi --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-error": "^3.2.0",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-views": "^6.1.5",
+    "nodemon": "^1.18.10",
+    "nunjucks": "^3.1.7",
+    "xml2json": "^0.11.2"
+  }
+}
